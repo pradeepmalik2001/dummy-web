@@ -1,0 +1,112 @@
+/* Container setup */
+.container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Empowering section styling */
+  .empowering-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .empowering-section h1 {
+    color: #2c8131;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Flexbox layout for the text boxes */
+  .contentt {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .text-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 45%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-box h2 {
+    color: #2c8131;
+    border-bottom: 2px solid #2c8131;
+    margin-bottom: 15px;
+  }
+  
+  .text-box p {
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .journey-div{
+    justify-content: space-around;
+    align-items: left;
+    background-color: aqua;
+  }
+
+  /* Journey section styling */
+  .journey-section {
+    text-align: center;
+    background: #2c8131;
+    color: white;
+    padding: 40px 20px;
+    justify-content: space-around;
+    align-items: left;
+  }
+  
+  .journey-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #2c8131;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cta-button:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .text-box {
+      flex: 1 1 100%;
+    }
+  
+    .empowering-section h1 {
+      font-size: 2em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .empowering-section h1 {
+      font-size: 1.6em;
+    }
+  
+    .journey-section h2 {
+      font-size: 1.6em;
+    }
+  
+    .cta-button {
+      font-size: 1em;
+      padding: 10px 20px;
+    }
+  }
+  
