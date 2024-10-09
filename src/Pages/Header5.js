@@ -15,14 +15,9 @@ function Header5() {
           className="family-image"
         />
         <div className="family-description">
-          <h3>The Vass Family</h3>
+          <h3>The Robert Gorter Family</h3>
           <p>
-            Dave Vass has been married to his beautiful wife, Jennifer, for 20 years and has 3 teenagers ages 18, 16, and 14. 
-            Dave grew up riding horses on a ranch in Alberta. Dave and Jennifer met while taking Kinesiology at the University 
-            of Calgary which instilled a love for fitness and nutrition. Over the last 15 years, Dave has successfully started 
-            and exited various companies in the tech industry. During Covid, his Dad passed away from being intubated which changed 
-            the course of his life. Now Dave and Jenn have a mission to help those who are suffering from cancer find true healing 
-            and rest. As such, they have dedicated their 40-acre resort in the Okanagan to The Healing Oasis.
+          On average, an adult human being produces approximately 10 million cancer cells per day. A major part of the immune system is to recognize and kill these cells immediately….  Thus: only one’s immune system can have you turn 88 years of age. The Gorter Model focuses on immune restoration to assist the immune system to kill all these approximately 10 million cancer cells and live without clinical cancer or, destroy cancer cells rapidly.
           </p>
         </div>
       </div>
