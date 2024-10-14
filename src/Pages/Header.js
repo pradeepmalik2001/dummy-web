@@ -55,6 +55,10 @@ function Header() {
           </a>
     </div>
 
+    <div>
+      <a href='#BookingForm.js'>Sign In</a>
+    </div>
+
     </div>
   )
 }
