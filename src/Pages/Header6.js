@@ -6,7 +6,7 @@ import Book2 from '../Images/Book2.jpeg';
 import ChinaAutograph from '../Images/china autograph 2.jpeg';
 import GorterTherapy from '../Images/gorter therapy.jpeg';
 import GorterAutograph from '../Images/china autpgraph.jpeg';
-import GorterOpinion from '../Images/lecture explNTION.jpeg';
+import GorterOpinion from '../Images/Gorter Opinion.jpeg';
 import Book7 from '../Images/Book7.jpeg';
 
 const Header6 = () => {
