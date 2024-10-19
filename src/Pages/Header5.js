@@ -1,8 +1,10 @@
 import React from 'react'
 import '../Pages/Header5.css';
 import GorterDress1 from '../Images/docter dress 1.jpeg';
-import GorterLecture from '../Images/lecture explNTION.jpeg';
+import GorterLecture from '../Images/Gorter Opinion.jpeg';
 import GorterTherapy from '../Images/gorter therapy.jpeg';
+import Gorterfamily from '../Images/Gorter Family.png';
+import GorterAutograph from '../Images/china autpgraph.jpeg';
 
 function Header5() {
   return (
@@ -13,7 +15,7 @@ function Header5() {
       {/* Family Section */}
       <div className="family-section">
         <img
-          src="https://via.placeholder.com/400x200" /* Replace with the family image URL */
+          src={Gorterfamily} /* Replace with the family image URL */
           alt="The Vass Family"
           className="family-image"
         />
