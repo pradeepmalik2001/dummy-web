@@ -8,48 +8,46 @@ function Header4() {
       <div className="approach-cards">
         <div className="card">
           <i className="icon fa fa-stethoscope" aria-hidden="true"></i>
-          <h3>World class alternative therapies</h3>
+          <h3>Ozone therapy - 
+          </h3>
           <p>
-            Our naturopathic cancer expert tailors therapies based on cancer type and stage,
-            not replacing traditional treatments like chemotherapy or surgery, but integrating
-            technology and nutrition for enhanced healing. Therapies include nutritional suite of IVs,
-            PEMF, sauna, Celsius42 Local Regional Hyperthermia. Our unique holistic cancer retreat with spa
-            and therapies is unmatched in Canada.
+        Ozone is a chemical compound consisting of three oxygen atoms O3 (ie triatomic oxygen), a highly energetic form of normal (diatomic) atmospheric oxygen (O2). Thus, the molecules of these two forms are different in structure. Due to its being an extremely powerful oxidizing agent and a highly effective disinfectant, it is used throughout the world to destroy germs in water treatment installations supplying drinking water.
           </p>
         </div>
         <div className="card">
           <i className="icon fa fa-apple" aria-hidden="true"></i>
-          <h3>Farm To Table Daily Meals</h3>
+          <h3>Mistletoe (Viscum album)</h3>
           <p>
-            We provide a dedicated chef who sources local, fresh ingredients that help support the body for cancer recovery.
-            The chef will prepare 3 meals a day tailored to the needs of all our guests. We will also provide high-quality,
-            freshly squeezed juices made from organic veggies and fruits.
+          For thousands of years, European mistletoe has been used as a medicinal plant in many healing traditions.
+Find out more
+
+
+Nutrient infusions
+As part of the Gorter Model, practically all patients receive antioxidants nutrients, trace elements and minerals via a drip (intravenously).
           </p>
         </div>
         <div className="card">
           <i className="icon fa fa-tint" aria-hidden="true"></i>
-          <h3>Drink Living Water And Feel Alive</h3>
+          <h3>Thymus peptides</h3>
           <p>
-            Our land has a natural spring that produces living water full of minerals that makes you feel alive when you drink it.
-            "Alive water" is incredibly important when on your journey of healing and now you don't even need to go somewhere to find it,
-            you'll have 24/7 access to all the water you need.
+          The thymus plays an important role in the overall immunomodulation. One could say that the thymus is the brain of the immune system.
           </p>
         </div>
         <div className="card">
           <i className="icon fa fa-lightbulb-o" aria-hidden="true"></i>
-          <h3>Staying Active Encourages Healing</h3>
+          <h3>Hyperthermia - Therapeutic Fever</h3>
           <p>
-            No matter what stage you are at with your healing journey, you will find a way to stay active at our healing oasis.
-            You can simply go on a walk in the forest, absorbing all the energy from the trees, or play a round of disc golf,
-            paddle on a kayak, or swim and feel vitalized. Yoga in the meadow or on the beach is also available.
+          “I would cure all diseases if I only could produce fever.” Parmenides, Greek physician and philosopher, 510 BC
+          Fever and heat therapy have been recognized for their beneficial effects on health since antiquity. Traditionally there have been two forms of hyperthermia—whole body and localized applications. We are now discussing the modern innovations to both approaches of hyperthermia, as applied in the treatment of cancer. Fever turns out to be one of the missing links in understanding cancer. Most cancer patients have a lower core temperature and cannot mount a fever. Thus they are unable to activate their immune system.
           </p>
         </div>
         <div className="card">
           <i className="icon fa fa-bed" aria-hidden="true"></i>
-          <h3>Have A Deep Sleep Surrounded By Nature</h3>
+          <h3>Immune therapies in the treatment of cancer</h3>
           <p>
-            Sleep is vital to recovering from any kind of disease as it's the time your body gets to recharge and mend itself.
-            Each cabin stays nice and cool in the summer and is very quiet and dark, giving you the best environment for sleeping.
+          In the Gorter Model, a full range of immune therapies are used to treat cancer patients.
+Although fever therapy and dendritic cell vaccinations are the primary forms of treatment, there are also several other complementary therapies that are incorporated, depending on the needs of the individual.
+The main goals of these innovative immune therapies are to restore and maximize immune function. The other goal is to destroy cancer cells without introducing toxic agents that can have a negative impact on immune function and on patient’s quality of life.
           </p>
         </div>
         <div className="card">
@@ -66,4 +64,4 @@ function Header4() {
   )
 }
 
-export default Header4
+export default Header4;
