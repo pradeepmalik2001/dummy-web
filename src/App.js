@@ -13,6 +13,7 @@ import BookingForm from './Pages/BookingForm';
 import BookingData from './Pages/BookingData';
 import BlogCard from './Pages/BlogCard';
 import Footer from './Pages/Footer';
+import Header1 from './Pages/Header1';
 
 const cardData = [
   {
@@ -37,13 +38,7 @@ function App() {
   return (
     <Router>
     <div className="App">
-
-      {/* <Header></Header>
-      <Header2></Header2>
-      <Header3></Header3>
-      <Header4></Header4>
-      <Header5></Header5>
-      <Header6></Header6> */}
+    <Header1/>
       <nav>
           <ul>
             {/* <li><Link to="/blog">Blog</Link></li> */}
@@ -52,12 +47,12 @@ function App() {
       
         <Routes>
           <Route path='/' element={<>
-            <Header></Header>
-            <Header2></Header2>
-            <Header3></Header3>
-            <Header4></Header4>
-            <Header5></Header5>
-            <Header6></Header6>s
+            <Header/>
+            <Header2/>
+            <Header3/>
+            <Header4/>
+            <Header5/>
+            <Header6/>
           </>}/>
           <Route path='/form' element={<BookingForm />}/>
           <Route path='/bookingData' element={<BookingData />}/>

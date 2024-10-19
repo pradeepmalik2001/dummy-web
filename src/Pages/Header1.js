@@ -1,14 +1,13 @@
+
 import React from 'react';
-import '../Pages/Header.css';
 import logo from '../Images/logo.png';
-import midlogo from '../Images/Webimage.jpg';
 import { Link } from 'react-router-dom';
 
-function Header() {
+const Header1 = () => {
+
   return (
     <div>
-      <header>
-      {/* <nav className="navbar">
+   <nav className="navbar">
         <div className="navbar-left">
           <ul className="nav-links">
             <li><a href="#home">Home</a></li>
@@ -34,34 +33,9 @@ function Header() {
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-      </nav> */}
-
-      <div className="header-banner">
-        <p className="banner-text">
-          Speak To A Team Member To Answer Your Questions Now!
-        </p>
-        <a href="#schedule" className="schedule-button">
-          Schedule a free call now!
-        </a>
-      </div>
-    </header>
-
-    <div className="mid-logo">
-          <a href="#mid-logo">
-            <img
-              className="mid-logo"
-              src={midlogo}
-              alt="Logo"
-            />
-          </a>
+      </nav>
     </div>
+  );
+};
 
-    <div>
-      <a href='#BookingForm.js'>Sign In</a>
-    </div>
-
-    </div>
-  )
-}
-
-export default Header
+export default Header1;
