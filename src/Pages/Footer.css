@@ -1,0 +1,41 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-memory h3 {
+    color: #00ff00; /* Bright green for the heading */
+  }
+  
+  .footer-nav,
+  .footer-social {
+    margin: 20px 0;
+  }
+  
+  .footer-nav a,
+  .footer-policy a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-social a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .footer-social a:hover {
+    color: #00ff00; /* Hover color */
+  }
+  
+  .footer-policy a {
+    color: #a8a8a8;
+  }
+  
+  .footer-policy a:hover {
+    color: #fff;
+  }
+  
