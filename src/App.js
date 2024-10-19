@@ -8,7 +8,7 @@ import Header4 from './Pages/Header4';
 import Header5 from './Pages/Header5';
 import Header6 from './Pages/Header6';
 import DateTimePicker from './Pages/DateTimePicker';
-import { BrowserRouter as Router,Routes,Route ,Link} from 'react-router-dom'
+import { BrowserRouter as Router,Routes,Route ,Link} from 'react-router-dom';
 import BookingForm from './Pages/BookingForm';
 import BookingData from './Pages/BookingData';
 import BlogCard from './Pages/BlogCard';
@@ -34,6 +34,7 @@ const cardData = [
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <Header></Header>
       <Header2></Header2>
@@ -41,12 +42,12 @@ function App() {
       <Header4></Header4>
       <Header5></Header5>
       <Header6></Header6>
-      {/* <nav>
+      <nav>
           <ul>
             <li><Link to="/blog">Blog</Link></li>
           </ul>
-        </nav> */}
-      <Router>
+      </nav>
+      
         <Routes>
           <Route path='/form' element={<BookingForm />}/>
           <Route path='/bookingData' element={<BookingData />}/>
@@ -69,12 +70,8 @@ function App() {
             }
           />
         </Routes>
+        </div>
       </Router>
-
-
-
-
-    </div>
   );
 }
 

@@ -30,9 +30,7 @@ function Header() {
         <div className="navbar-right">
           <ul className="nav-links">
             <li><a href="#podcasts">Podcasts</a></li>
-            {/* <Link></Link> */}
-            {/* <li><Link to="/blog">Blog</Link></li> */}
-            <li><a href="/blog"></a></li>
+            <li><Link to="/blog">Blog</Link></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
