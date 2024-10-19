@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from "react";
-//import MaterialTable from "@material-table/core";
+
 
 function BookingData() {
     const [ticketDetails, setTicketDetails] = useState([]);
@@ -32,7 +32,7 @@ function BookingData() {
    
   return (
     <div>
-     {/* <MaterialTable
+      {/* <MaterialTable
           title="Work Information Record"
           data={ticketDetails}
           columns={[
@@ -66,7 +66,7 @@ function BookingData() {
               field: "address",
             }
           ]}
-        /> */}
+        />  */}
     </div>
   ) 
 }

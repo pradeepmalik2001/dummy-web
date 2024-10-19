@@ -40,9 +40,12 @@ function Header() {
         <p className="banner-text">
           Speak To A Team Member To Answer Your Questions Now!
         </p>
-        <a href="#schedule" className="schedule-button">
+        {/* <a href="#schedule" className="schedule-button">
           Schedule a free call now!
-        </a>
+        </a> */}
+        <Link to="/form" className="schedule-button">
+          Schedule a free call now!
+        </Link>
       </div>
     </header>
 

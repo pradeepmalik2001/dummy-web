@@ -38,7 +38,13 @@ function App() {
   return (
     <Router>
     <div className="App">
-    <Header1/>
+
+      {/* <Header></Header>
+      <Header2></Header2>
+      <Header3></Header3>
+      <Header4></Header4>
+      <Header5></Header5>
+      <Header6></Header6> */}
       <nav>
           <ul>
             {/* <li><Link to="/blog">Blog</Link></li> */}
@@ -74,6 +80,7 @@ function App() {
               </div>
             }
           />
+          <Route path="/form" element={<BookingForm/>} />
         </Routes>
         <Footer/>
         </div>
