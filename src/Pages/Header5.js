@@ -1,5 +1,8 @@
 import React from 'react'
 import '../Pages/Header5.css';
+import GorterDress1 from '../Images/docter dress 1.jpeg';
+import GorterLecture from '../Images/lecture explNTION.jpeg';
+import GorterTherapy from '../Images/gorter therapy.jpeg';
 
 function Header5() {
   return (
@@ -30,21 +33,21 @@ function Header5() {
       {/* Team Members Section */}
       <div className="team-members">
         <div className="team-member">
-          <img src="https://via.placeholder.com/100" alt="Dave & Jennifer Vass" />
-          <p>Dave & Jennifer Vass</p>
-          <span>Property Owners</span>
+          <img src={GorterDress1} alt="Dave & Jennifer Vass" />
+          <p>Robert Gorter</p>
+          <span>Prof. Dr. Robert Gorter</span>
         </div>
         <div className="team-member">
-          <img src="https://via.placeholder.com/100" alt="Top Cancer Doctor" />
-          <p>Top Cancer Doctor</p>
-          <span>Lead Naturopath</span>
+          <img src={GorterLecture} alt="Top Cancer Doctor" />
+          <p>Gorter Lecture Explanation</p>
+          {/* <span>Lead Naturopath</span> */}
         </div>
         <div className="team-member">
-          <img src="https://via.placeholder.com/100" alt="Shane LaRoche" />
-          <p>Shane LaRoche</p>
+          <img src={GorterTherapy} alt="Shane LaRoche" />
+          <p>Groter Therapy</p>
           <span>Head Chef</span>
         </div>
-        <div className="team-member">
+        {/* <div className="team-member">
           <img src="https://via.placeholder.com/100" alt="Christine Muir" />
           <p>Christine Muir</p>
           <span>Cancer Concierge</span>
@@ -53,7 +56,7 @@ function Header5() {
           <img src="https://via.placeholder.com/100" alt="Bob Levy" />
           <p>Bob Levy</p>
           <span>Director of Operations</span>
-        </div>
+        </div> */}
       </div>
 
       {/* CTA Button */}

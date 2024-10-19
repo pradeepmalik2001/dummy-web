@@ -2,6 +2,7 @@ import React from 'react';
 import '../Pages/Header.css';
 import logo from '../Images/logo.png';
 import midlogo from '../Images/Webimage.jpg';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -29,7 +30,9 @@ function Header() {
         <div className="navbar-right">
           <ul className="nav-links">
             <li><a href="#podcasts">Podcasts</a></li>
-            <li><a href="#blog">Blog</a></li>
+            {/* <Link></Link> */}
+            {/* <li><Link to="/blog">Blog</Link></li> */}
+            <li><a href="/blog"></a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
