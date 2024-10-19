@@ -44,7 +44,7 @@ function App() {
       <Header6></Header6>
       <nav>
           <ul>
-            <li><Link to="/blog">Blog</Link></li>
+            {/* <li><Link to="/blog">Blog</Link></li> */}
           </ul>
       </nav>
       
@@ -52,7 +52,7 @@ function App() {
           <Route path='/form' element={<BookingForm />}/>
           <Route path='/bookingData' element={<BookingData />}/>
           <Route
-            path="/blog"
+            path="/blogrrrr"
             element={
               <div className="card-container">
                 {cardData.map((item, index) => (
