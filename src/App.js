@@ -38,19 +38,7 @@ function App() {
   return (
     <Router>
     <div className="App">
-
-      {/* <Header></Header>
-      <Header2></Header2>
-      <Header3></Header3>
-      <Header4></Header4>
-      <Header5></Header5>
-      <Header6></Header6> */}
-      <nav>
-          <ul>
-            {/* <li><Link to="/blog">Blog</Link></li> */}
-          </ul>
-      </nav>
-      
+        <Header1/>
         <Routes>
           <Route path='/' element={<>
             <Header/>
