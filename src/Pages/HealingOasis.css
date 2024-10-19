@@ -1,0 +1,47 @@
+.healing-oasis-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* padding: 20px; */
+    background-color: #005F3D;
+    color: white;
+    height: 50vh;
+  }
+  
+  .left-content {
+    max-width: 50%;
+    padding: 20px;
+  }
+  
+  .left-content h1 {
+    font-family: 'Cursive', sans-serif;
+    font-size: 2.5rem;
+  }
+  
+  .left-content .logo-small {
+    font-size: 1.2rem;
+  }
+  
+  .left-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .google-maps-button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+  }
+  
+  .right-content {
+    max-width: 50%;
+  }
+  
+  .map-image {
+    width: 100%;
+    /* border-radius: 10px; */
+  }
+  

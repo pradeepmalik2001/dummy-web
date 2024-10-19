@@ -1,8 +1,19 @@
 import React from 'react';
 import './Footer.css'; // Optional: If you want to style it in a separate CSS file.
+import HealingOasis from './HealingOasis';
 
 const Footer = () => {
   return (
+    <>
+    <div className="header-banner">
+        <p className="banner-text">
+          Speak To A Team Member To Answer Your Questions Now!
+        </p>
+        <a href="#schedule" className="schedule-button">
+          Schedule a free call now!
+        </a>
+      </div>
+    <HealingOasis/>
     <footer className="footer">
       <div className="footer-memory">
         <h3>In loving memory of</h3>
@@ -44,6 +55,7 @@ const Footer = () => {
         <a href="#privacy">Privacy Policy</a>
       </div>
     </footer>
+    </>
   );
 };
 
