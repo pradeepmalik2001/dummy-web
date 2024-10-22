@@ -5,10 +5,11 @@
     align-items: center;
     height: 120vh;
     background-color: #f7f7f7;
+    padding: 20px;
   }
   
   /* Style the form */
-  .form {
+  .formm {
     background-color: white;
     padding: 20px;
     border-radius: 8px;

@@ -58,7 +58,7 @@ const BookingForm = () => {
 
   return (
     <div className="form-container">
-      <form onSubmit={handleSubmit} className="form">
+      <form onSubmit={handleSubmit} className="formm">
         <div className="form-group">
           <label htmlFor="firstName">First Name * </label>
           <input

@@ -10,9 +10,10 @@ const Header1 = () => {
    <nav className="navbar">
         <div className="navbar-left">
           <ul className="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#what-we-offer">What We Offer</a></li>
+            {/* <li><a href="#home">Home</a></li> */}
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/">Family</Link></li>
+            <li><Link>What We Offer</Link></li>
           </ul>
         </div>
 
@@ -28,10 +29,14 @@ const Header1 = () => {
 
         <div className="navbar-right">
           <ul className="nav-links">
-            <li><a href="#podcasts">Podcasts</a></li>
+            <li><a href='#podcasts'>Podcasts</a></li>
+            {/* <li><Link to="/podcasts">Podcasts</Link></li> */}
             <li><Link to="/blog">Blog</Link></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
+          <Link to="/signIn" className="signin-btn">
+            Sign In
+          </Link>
         </div>
       </nav>
     </div>
