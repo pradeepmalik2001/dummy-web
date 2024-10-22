@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import * as XLSX from 'xlsx';
+import '../Pages/DataTable.css'; // Adding a CSS file for custom styles
 
 const DataTable = () => {
   const [data, setData] = useState([]);
@@ -7,9 +8,10 @@ const DataTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://api.example.com/data'); // Replace with your API
+        const response = await fetch('http://localhost:8081/booking/getAll'); // Replace with your API
         const result = await response.json();
-        setData(result);
+        setData(result.Data);
+        console.log("Result : ", result.Data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -28,29 +30,35 @@ const DataTable = () => {
   };
 
   return (
-    <div>
-      <h1>Data Table</h1>
-      <button onClick={downloadExcel}>Download Excel</button>
+    <div className="table-container">
+      <button className="download-button" onClick={downloadExcel}>Download Excel</button>
       <table border="1">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-            {/* Add other headers according to your data */}
+            <th>Booking ID</th>
+            <th>Patient Name</th>
+            <th>Patient Email</th>
+            <th>Patient Mobile</th>
+            <th>Patient Address</th>
+            <th>Booking Date</th>
+            <th>Cancer Stage</th>
           </tr>
         </thead>
         <tbody>
           {data.map((item) => (
             <tr key={item.id}>
               <td>{item.id}</td>
-              <td>{item.name}</td>
+              <td>{item.firstName} {item.lastName}</td>
               <td>{item.email}</td>
-              {/* Add other fields */}
+              <td>{item.mobile}</td>
+              <td>{item.address}</td>
+              <td>{item.scheduleDate}</td>
+              <td>{item.typeOfCancer}</td>
             </tr>
           ))}
         </tbody>
       </table>
+      <div className='last'></div>
     </div>
   );
 };

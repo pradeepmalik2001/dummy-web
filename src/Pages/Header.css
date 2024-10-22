@@ -64,6 +64,23 @@
     border-radius: 25px;
     font-weight: bold;
   }
+
+  .signin-btn {
+    border: none;
+    border-radius: 50%;
+    background-color: #f0a500; /* Button color */
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 40px;
+    text-decoration: none;
+  }
+  
+  .signin-btn:hover {
+    background-color: #d48f00;
+  }
   /* Responsive layout */
   @media (max-width: 768px) {
     .nav-links {

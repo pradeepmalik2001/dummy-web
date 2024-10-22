@@ -5,6 +5,7 @@ import GorterLecture from '../Images/Gorter Opinion.jpeg';
 import GorterTherapy from '../Images/gorter therapy.jpeg';
 import Gorterfamily from '../Images/Gorter Family.png';
 import GorterAutograph from '../Images/china autpgraph.jpeg';
+import { Link } from 'react-router-dom';
 
 function Header5() {
   return (
@@ -57,8 +58,11 @@ function Header5() {
       </div>
 
       {/* CTA Button */}
-      <div className="cta-section">
-        <button className="cta-button">Schedule a free call now!</button>
+      <div className='journey-div'>
+      <section className="journey-section">
+        <h2>Begin your healing journey!</h2>
+        <Link to="/form" className="cta-button">Schedule a free call now!</Link>
+      </section>
       </div>
     </div>
   )

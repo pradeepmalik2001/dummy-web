@@ -67,22 +67,42 @@
     color: #777;
   }
   
-  /* CTA Button */
-  .cta-section {
-    margin-top: 3rem;
+  .journey-div{
+    justify-content: space-around;
+    align-items: left;
+    background-color: aqua;
+    width: 100%;
+  }
+
+  /* Journey section styling */
+  .journey-section {
+    text-align: center;
+    background: #2c8131;
+    color: white;
+    padding: 40px 20px;
+    justify-content: space-around;
+    align-items: left;
+    width: 100%;
+  }
+  
+  .journey-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
   }
   
   .cta-button {
-    background-color: #6fbf3a;
-    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #2c8131;
+    background-color: white;
     border: none;
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    border-radius: 25px;
     cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
   }
   
   .cta-button:hover {
-    background-color: #5aa72a;
+    background-color: #f9f9f9;
   }
   

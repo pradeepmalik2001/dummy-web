@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Pages/Header3.css';
+import { Link } from 'react-router-dom';
 
 function Header3() {
   return (
@@ -33,7 +34,7 @@ function Header3() {
     <div className='journey-div'>
       <section className="journey-section">
         <h2>Begin your healing journey!</h2>
-        <button className="cta-button">Schedule a free call now!</button>
+        <Link to="/form" className="cta-button">Schedule a free call now!</Link>
       </section>
       </div>
     </div>
