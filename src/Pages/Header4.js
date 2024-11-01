@@ -34,7 +34,7 @@ As part of the Gorter Model, practically all patients receive antioxidants nutri
           </p>
         </div>
         <div className="card">
-          <i className="icon fa fa-lightbulb-o" aria-hidden="true"></i>
+          <i className="icon fa fa-tint" aria-hidden="true"></i>
           <h3>Hyperthermia - Therapeutic Fever</h3>
           <p>
           “I would cure all diseases if I only could produce fever.” Parmenides, Greek physician and philosopher, 510 BC
