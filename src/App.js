@@ -12,6 +12,7 @@ import { BrowserRouter as Router,Routes,Route ,Link} from 'react-router-dom';
 import BookingForm from './Pages/BookingForm';
 import BookingData from './Pages/BookingData';
 import BlogCard from './Pages/BlogCard';
+import Footer1 from './Pages/Footer1';
 import Footer from './Pages/Footer';
 import Header1 from './Pages/Header1';
 import DataTable from './Pages/DataTable';
@@ -77,7 +78,7 @@ function App() {
             <Header6/>
           </>}/>
           <Route path="/signIn" element={<SignIn/>}></Route>
-          <Route path="/contact" element={<Footer/>}></Route>
+          <Route path="/contact" element={<Footer1/>}></Route>
           <Route path='/form' element={<BookingForm />}/>
           {/* <Route path='/bookingData' element={<BookingData />}/> */}
           <Route

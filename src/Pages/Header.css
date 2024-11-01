@@ -76,6 +76,7 @@
     transition: background-color 0.3s;
     margin-left: 40px;
     text-decoration: none;
+    align-content: center;
   }
   
   .signin-btn:hover {
