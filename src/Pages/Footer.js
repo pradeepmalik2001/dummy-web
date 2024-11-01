@@ -47,7 +47,7 @@ const Footer = () => {
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
           <i className="fab fa-twitter"></i>
         </a>
-        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+        <a href="https://www.youtube.com/@robertgorter3442" target="_blank" rel="noopener noreferrer" className="social-icon">
           <i className="fab fa-youtube"></i>
         </a>
       </div>

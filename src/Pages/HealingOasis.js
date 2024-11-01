@@ -1,12 +1,13 @@
 import React from 'react';
 import './HealingOasis.css';
+import RobertSign from '../Images/Robert Sign.png';
 
 const HealingOasis = () => {
   return (
     <div className="healing-oasis-container">
       {/* Left side text and button */}
       <div className="left-content">
-        <img src='https://thehealingoasis.ca/wp-content/uploads/2024/02/THO-white-logo-300x112.png' alt=''/>
+        <img src={RobertSign} alt=''/>
         <p>
           The Healing Oasis is about 40 minutes from Vernon Hospital. Click the button below
           to find our location.
