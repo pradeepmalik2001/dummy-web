@@ -26,6 +26,10 @@
     font-size: 1.2rem;
     margin: 20px 0;
   }
+
+  .left-content img {
+    background-color: green;
+  }
   
   .google-maps-button {
     background-color: white;

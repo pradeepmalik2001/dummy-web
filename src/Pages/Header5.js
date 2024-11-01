@@ -42,8 +42,8 @@ function Header5() {
         </div>
         <div className="team-member">
           <img src={GorterTherapy} alt="Shane LaRoche" />
-          <p>Groter Therapy</p>
-          <span>Head Chef</span>
+          <p>Gorter Therapy</p>
+          <span>Head Doctor</span>
         </div>
         {/* <div className="team-member">
           <img src="https://via.placeholder.com/100" alt="Christine Muir" />

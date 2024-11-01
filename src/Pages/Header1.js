@@ -29,8 +29,8 @@ const Header1 = () => {
 
         <div className="navbar-right">
           <ul className="nav-links">
-            <li><a href='#podcasts'>Podcasts</a></li>
-            {/* <li><Link to="/podcasts">Podcasts</Link></li> */}
+            {/* <li><a href='#podcasts'>Podcasts</a></li> */}
+            <li><Link to="/podcasts">Podcasts</Link></li>
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
