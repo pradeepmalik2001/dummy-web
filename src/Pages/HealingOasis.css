@@ -33,7 +33,7 @@
 .left-content img {
   background-color: green;
   max-width: 100%; /* Prevents image from overflowing */
-  height: auto; /* Maintains aspect ratio */
+  height: 50%; /* Maintains aspect ratio */
 }
 
 .google-maps-button {

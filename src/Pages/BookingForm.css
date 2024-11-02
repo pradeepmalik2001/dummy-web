@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 120vh;
   background-color: #f7f7f7;
   padding: 20px;
 }
@@ -14,7 +14,7 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 40%;
+  width: 40%; /* Adjust this value as needed for responsiveness */
   display: flex;
   flex-direction: column;
 }
@@ -38,10 +38,19 @@
 
 /* Style form inputs */
 .form-group input {
-  padding: 8px;
+  padding: 10px; /* Increased padding for a better appearance */
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 100%; /* Set input width to 100% to make all inputs the same size */
+  width: 100%; /* Ensure inputs take the full width of their container */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Specific styles for input types to ensure uniformity */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+  height: 90%; /* Set a specific height to ensure all input fields are the same size */
 }
 
 /* Style the submit button */
@@ -52,26 +61,27 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 10px; /* Add a margin to separate the button from the last input */
 }
 
 button:hover {
   background-color: #45a049;
 }
 
-/* Responsive styling for mobile devices */
-@media (max-width: 768px) {
-  .formm {
-      width: 90%; /* Adjust form width on smaller screens */
-      padding: 15px;
+  
+  @media (max-width: 768px) {
+    .formm {
+        width: 90%; /* Adjust form width on smaller screens */
+        padding: 15px;
+    }
+  
+    /* Smaller padding and font size for input fields */
+    .form-group input {
+        padding: 6px;
+    }
+  
+    /* Reduce button padding */
+    button {
+        padding: 8px;
+    }
   }
-
-  /* Smaller padding and font size for input fields */
-  .form-group input {
-      padding: 6px;
-  }
-
-  /* Reduce button padding */
-  button {
-      padding: 8px;
-  }
-}
