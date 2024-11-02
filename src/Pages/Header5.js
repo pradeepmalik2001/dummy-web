@@ -3,7 +3,7 @@ import '../Pages/Header5.css';
 import GorterDress1 from '../Images/docter dress 1.jpeg';
 import GorterLecture from '../Images/Gorter Opinion.jpeg';
 import GorterTherapy from '../Images/gorter therapy.jpeg';
-import Gorterfamily from '../Images/Gorter Family.png';
+import Gorterfamily from '../Images/Gorter Fam.png';
 import GorterAutograph from '../Images/china autpgraph.jpeg';
 import { Link } from 'react-router-dom';
 

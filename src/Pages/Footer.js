@@ -35,16 +35,16 @@ const Footer = () => {
       </div> */}
       
       <div className="footer-social">
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-          <i className="fab fa-instagram"></i>
+        <a href="https://www.gorter-model.org/" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <i className="fab fa-google"></i>
         </a>
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+        <a href="https://www.facebook.com/profile.php?id=100010911792475&mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" className="social-icon">
           <i className="fab fa-facebook-f"></i>
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+        <a href="https://www.linkedin.com/in/robertgorter-thegortermodel" target="_blank" rel="noopener noreferrer" className="social-icon">
           <i className="fab fa-linkedin-in"></i>
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+        <a href="https://x.com/RobertGorterMD?t=l34euWG5IPeX9sdODD6GSg&s=08" target="_blank" rel="noopener noreferrer" className="social-icon">
           <i className="fab fa-twitter"></i>
         </a>
         <a href="https://www.youtube.com/@robertgorter3442" target="_blank" rel="noopener noreferrer" className="social-icon">

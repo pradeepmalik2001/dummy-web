@@ -4,6 +4,7 @@ import '../Pages/DataTable.css'; // Adding a CSS file for custom styles
 
 const DataTable = () => {
   const [data, setData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -29,9 +30,25 @@ const DataTable = () => {
     XLSX.writeFile(workbook, "data.xlsx");
   };
 
+  // Filter data based on search term
+  const filteredData = data.filter(item =>
+    Object.values(item).some(value =>
+      value && value.toString().toLowerCase().includes(searchTerm.toLowerCase())
+    )
+  );
+
   return (
     <div className="table-container">
-      <button className="download-button" onClick={downloadExcel}>Download Excel</button>
+      <div className="header">
+        <input
+          type="text"
+          placeholder="Search..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="search-input"
+        />
+        <button className="download-button" onClick={downloadExcel}>Download Excel</button>
+      </div>
       <table border="1">
         <thead>
           <tr>
@@ -45,7 +62,7 @@ const DataTable = () => {
           </tr>
         </thead>
         <tbody>
-          {data.map((item) => (
+          {filteredData.map((item) => (
             <tr key={item.id}>
               <td>{item.id}</td>
               <td>{item.firstName} {item.lastName}</td>
