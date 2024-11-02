@@ -1,10 +1,10 @@
 import React from 'react';
 import '../Pages/Header6.css'; // Ensure to link the CSS for styles
-import GorterDress from '../Images/docter dress 1.jpeg';
+import GorterDress from '../Images/Image1.jpeg';
 import Book1 from '../Images/Book1.jpeg';
 import Book2 from '../Images/Book2.jpeg';
 import ChinaAutograph from '../Images/china autograph 2.jpeg';
-import GorterTherapy from '../Images/gorter therapy.jpeg';
+import GorterTherapy from '../Images/Image2.jpeg';
 import GorterAutograph from '../Images/china autpgraph.jpeg';
 import GorterOpinion from '../Images/Gorter Opinion.jpeg';
 import Book7 from '../Images/Book7.jpeg';

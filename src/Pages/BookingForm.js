@@ -2,6 +2,15 @@ import React, { useState } from 'react';
 import './BookingForm.css'; // Import the CSS for styling
 
 const BookingForm = () => {
+  const formatDate = (date) => {
+    const d = new Date(date);
+    const day = String(d.getDate()).padStart(2, '0');
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const year = d.getFullYear();
+    return `${day}/${month}/${year}`;
+  };
+
+  const today = formatDate(new Date());
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -12,7 +21,8 @@ const BookingForm = () => {
     state: '',
     postalCode: '',
     typeOfCancer: '',
-    remarks: ''
+    remarks: '',
+    scheduleDate: today // Set today's date as the default value
   });
 
   const handleChange = (e) => {
@@ -46,7 +56,8 @@ const BookingForm = () => {
           state: '',
           postalCode: '',
           typeOfCancer: '',
-          remarks: ''
+          remarks: '',
+          scheduleDate: today
         });
       } else {
         console.error('Error:', response.statusText);
@@ -84,7 +95,7 @@ const BookingForm = () => {
         <div className="form-group">
           <label htmlFor="email">Email *</label>
           <input
-            type="email"
+            type="text"
             id="email"
             name="email"
             value={formData.email}
@@ -95,10 +106,21 @@ const BookingForm = () => {
         <div className="form-group">
           <label htmlFor="phone">Phone *</label>
           <input
-            type="number"
-            id="phone"
+            type="text"
+            id="text"
             name="phone"
             value={formData.phone}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="scheduleDate">Date *</label>
+          <input
+            type="text"
+            id="scheduleDate"
+            name="scheduleDate"
+            value={formData.scheduleDate}
             onChange={handleChange}
             required
           />
