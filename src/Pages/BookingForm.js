@@ -2,15 +2,16 @@ import React, { useState } from 'react';
 import './BookingForm.css'; // Import the CSS for styling
 
 const BookingForm = () => {
-  const formatDate = (date) => {
-    const d = new Date(date);
-    const day = String(d.getDate()).padStart(2, '0');
-    const month = String(d.getMonth() + 1).padStart(2, '0');
-    const year = d.getFullYear();
-    return `${day}/${month}/${year}`;
-  };
+  // const formatDate = (date) => {
+  //   const d = new Date(date);
+  //   const day = String(d.getDate()).padStart(2, '0');
+  //   const month = String(d.getMonth() + 1).padStart(2, '0');
+  //   const year = d.getFullYear();
+  //   return `${day}/${month}/${year}`;
+  // };
 
-  const today = formatDate(new Date());
+  //const today = formatDate(new Date());
+  const today = new Date().toISOString().split("T")[0]; 
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -78,6 +79,7 @@ const BookingForm = () => {
             name="firstName"
             value={formData.firstName}
             onChange={handleChange}
+            placeholder='Enter your first name'
             required
           />
         </div>
@@ -89,39 +91,43 @@ const BookingForm = () => {
             name="lastName"
             value={formData.lastName}
             onChange={handleChange}
+            placeholder='Enter your last name'
             required
           />
         </div>
         <div className="form-group">
           <label htmlFor="email">Email *</label>
           <input
-            type="text"
+            type="email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
+            placeholder='Enter your email'
             required
           />
         </div>
         <div className="form-group">
           <label htmlFor="phone">Phone *</label>
           <input
-            type="text"
-            id="text"
+            type="number"
+            id="phone"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
+            placeholder='Enter your phone number'
             required
           />
         </div>
         <div className="form-group">
           <label htmlFor="scheduleDate">Date *</label>
           <input
-            type="text"
+            type="date"
             id="scheduleDate"
             name="scheduleDate"
             value={formData.scheduleDate}
             onChange={handleChange}
+            placeholder='Enter you schedule date'
             required
           />
         </div>
@@ -133,6 +139,7 @@ const BookingForm = () => {
             name="address"
             value={formData.address}
             onChange={handleChange}
+            placeholder='Enter your address'
             required
           />
         </div>
@@ -144,6 +151,7 @@ const BookingForm = () => {
             name="city"
             value={formData.city}
             onChange={handleChange}
+            placeholder='Enter your city'
             required
           />
         </div>
@@ -155,6 +163,8 @@ const BookingForm = () => {
             name="state"
             value={formData.state}
             onChange={handleChange}
+            placeholder='Enter your state'
+
             required
           />
         </div>
@@ -166,6 +176,8 @@ const BookingForm = () => {
             name="postalCode"
             value={formData.postalCode}
             onChange={handleChange}
+            placeholder='Enter your postal code'
+
             required
           />
         </div>
@@ -177,6 +189,8 @@ const BookingForm = () => {
             name="typeOfCancer"
             value={formData.typeOfCancer}
             onChange={handleChange}
+            placeholder='Enter your type of cancer and stage'
+
             required
           />
         </div>
@@ -188,6 +202,7 @@ const BookingForm = () => {
             name="remarks"
             value={formData.remarks}
             onChange={handleChange}
+            placeholder='Enter any remarks'
           />
         </div>
         <button type="submit">Submit</button>

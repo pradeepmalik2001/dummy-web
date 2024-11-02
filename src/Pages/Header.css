@@ -12,6 +12,15 @@
     padding: 0rem;
     background-color: #f8f8f8;
   }
+
+  .media-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   
   .navbar-left,
   .navbar-right {
@@ -44,9 +53,8 @@
 
   .video-containerr {
     position: absolute;
-    top: 68%;
-    left: 55%;
-    transform: translate(20%, -50%); /* Shift slightly to the right */
+    bottom: 20%; /* Position 30% from the bottom of the mid-logo */
+    right: 7%; /* Position 10% from the right side of mid-logo */
     z-index: 2;
   }
   
@@ -124,8 +132,10 @@
       }
     
       .video-containerr {
-        transform: translate(-50%, -50%); /* Center the video on smaller screens */
+        right: auto; /* Center the video on smaller screens */
         left: 50%;
+        transform: translateX(-50%);
+        bottom: 20%;
       }
   }
   
