@@ -19,9 +19,7 @@ const Footer = () => {
       <div className="footer-memory">
         <h3>In loving memory of</h3>
         <p>
-          Sharon Stetson, Karen Stetson, Isla Rose Stetson, Roger Quanz, Amy
-          Sevenhuysen, Karen Duncalfe, Tanya Sayer, Delbert Sirr, and all those
-          who lost the battle to cancer.
+        Difficult roads can lead to beautiful destinations." "There's always hope beyond what you see." "It's possible not just to survive, but to thrive and to live a healthy, wonderful life again."
         </p>
       </div>
       

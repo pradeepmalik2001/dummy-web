@@ -26,7 +26,7 @@ const Header6 = () => {
   return (
     <div className="gallery-section">
       {/* Gallery Title */}
-      <h2 className="gallery-title">Healing heaven gallery</h2>
+      <h2 className="gallery-title">Heaven gallery</h2>
 
       {/* Grid of images */}
       <div className="gallery-grid">
