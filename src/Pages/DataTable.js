@@ -9,7 +9,7 @@ const DataTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:8081/booking/getAll'); // Replace with your API
+        const response = await fetch('http://3.109.150.21:8081/booking/getAll'); // Replace with your API
         const result = await response.json();
         setData(result.Data);
         console.log("Result : ", result.Data);

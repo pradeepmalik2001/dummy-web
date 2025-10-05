@@ -36,7 +36,7 @@ const BookingForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:8081/booking/save', {
+      const response = await fetch('http://3.109.150.21:8081/booking/save', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
