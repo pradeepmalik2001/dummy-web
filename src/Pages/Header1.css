@@ -68,6 +68,47 @@
   color: #28a745;
 }
 
+.language-switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-switch:hover {
+  background-color: #bbb;
+}
+
+.switch-slider {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.switch-slider.active {
+  transform: translateX(30px);
+  background-color: #28a745;
+}
+
+.switch-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  z-index: 1;
+}
+
 @media (max-width: 1024px) {
   .navbar {
     padding: 1rem;

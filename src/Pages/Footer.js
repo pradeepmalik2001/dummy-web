@@ -2,25 +2,26 @@ import React from 'react';
 import './Footer.css'; // Optional: If you want to style it in a separate CSS file.
 import HealingOasis from './HealingOasis';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
+  
   return (
     <>
     <div className="header-banner">
         <p className="banner-text">
-          Speak To A Team Member To Answer Your Questions Now!
+          {t('speakToTeam')}
         </p>
         <Link to="/form" className="schedule-button">
-          Schedule a free call now!
+          {t('scheduleCall')}
         </Link>
       </div>
     <HealingOasis/>
     <footer className="footer">
       <div className="footer-memory">
-        <h3>In loving memory of</h3>
-        <p>
-        Difficult roads can lead to beautiful destinations." "There's always hope beyond what you see." "It's possible not just to survive, but to thrive and to live a healthy, wonderful life again."
-        </p>
+        <h3>{t('inMemory')}</h3>
+        <p>{t('memoryText')}</p>
       </div>
       
       {/* <div className="footer-nav">
@@ -51,7 +52,7 @@ const Footer = () => {
       </div>
       
       <div className="footer-policy">
-        <a href="#privacy">Privacy Policy</a>
+        <a href="#privacy">{t('privacyPolicy')}</a>
       </div>
     </footer>
     </>
