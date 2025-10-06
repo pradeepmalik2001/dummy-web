@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Pages/Header6.css'; // Ensure to link the CSS for styles
 import GorterDress from '../Images/Image1.jpeg';
 import Book1 from '../Images/Book1.jpeg';
@@ -10,7 +10,9 @@ import GorterOpinion from '../Images/Gorter Opinion.jpeg';
 import Book7 from '../Images/Book7.jpeg';
 
 const Header6 = () => {
-  // Array of gallery images with id, src, and alt attributes
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  
   const galleryImages = [
     { id: 1, src: GorterDress, alt: 'Image 1' },
     { id: 2, src: GorterTherapy, alt: 'Image 2' },
@@ -22,19 +24,46 @@ const Header6 = () => {
     { id: 8, src: Book7, alt: 'Image 8' },
   ];
 
-  // Functional component returns JSX for the gallery
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const nextSlide = () => {
+    if (isMobile) {
+      setCurrentIndex((prev) => (prev + 1 >= galleryImages.length ? 0 : prev + 1));
+    } else {
+      setCurrentIndex((prev) => (prev + 4 >= galleryImages.length ? 0 : prev + 4));
+    }
+  };
+
+  const prevSlide = () => {
+    if (isMobile) {
+      setCurrentIndex((prev) => (prev - 1 < 0 ? galleryImages.length - 1 : prev - 1));
+    } else {
+      setCurrentIndex((prev) => (prev - 4 < 0 ? Math.max(0, galleryImages.length - 4) : prev - 4));
+    }
+  };
+
   return (
     <div className="gallery-section">
-      {/* Gallery Title */}
       <h2 className="gallery-title">Heaven gallery</h2>
-
-      {/* Grid of images */}
-      <div className="gallery-grid">
-        {galleryImages.map((image) => (
-          <div key={image.id} className="gallery-item">
-            <img src={image.src} alt={image.alt} />
+      
+      <div className="carousel-container">
+        <button className="carousel-btn prev" onClick={prevSlide}>‹</button>
+        
+        <div className="carousel-wrapper">
+          <div className="carousel-track" style={{ transform: `translateX(-${currentIndex * (isMobile ? 100 : 25)}%)` }}>
+            {galleryImages.map((image) => (
+              <div key={image.id} className="carousel-item">
+                <img src={image.src} alt={image.alt} />
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+        
+        <button className="carousel-btn next" onClick={nextSlide}>›</button>
       </div>
     </div>
   );
