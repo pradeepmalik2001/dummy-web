@@ -19,6 +19,7 @@ import DataTable from './Pages/DataTable';
 import SignIn from './SignIn/SignIn';
 import Podcast1 from './Images/Podcast1.png';
 import Podcast2 from './Images/Podcast2.png';
+import Podcast3 from './Images/Podcast3.png';
 import Blog1 from './Images/Blog1.png';
 
 const cardData = [
@@ -62,13 +63,13 @@ const podcastData = [
     link: 'https://www.facebook.com/thegortermodel/videos/harmen-wagenmakers-in-the-netherlands-was-diagnosed-with-far-advanced-end-stage-/1234242777599426/?rdid=WB76bkuAWCsEAW4D',
   },
   {
-    title: 'Patient-with-endstage Glioblastoma-survived-16-years-cancer-free',
-    description: 'Research has made it clear that fever is not the enemy; it is the friend of healing..',
+    title: 'Fighting Cancer Through Nontoxic Healing – Guided by Prof. Dr. Robert Gorter',
+    description: 'Prof. Gorter promotes nontoxic cancer healing during China visit.',
     date: 'July 17, 2024',
     time: '1:33 pm',
-    image: Podcast2, // Replace with actual image path
+    image: Podcast3, // Replace with actual image path
     buttonText: 'Read More',
-    link: 'https://drive.google.com/file/d/1joF0kgXp7ODQIyhRuDPZ5seXC754---x/view?usp=drivesdk',
+    link: 'https://youtu.be/H28wMAMDi0s?si=AYUH3L5ft5LmpCUy',
   }
 ];
 
