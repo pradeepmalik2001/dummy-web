@@ -61,15 +61,15 @@ const podcastData = [
     buttonText: 'Read More',
     link: 'https://www.facebook.com/thegortermodel/videos/harmen-wagenmakers-in-the-netherlands-was-diagnosed-with-far-advanced-end-stage-/1234242777599426/?rdid=WB76bkuAWCsEAW4D',
   },
-  // {
-  //   title: 'Patient-with-endstage Glioblastoma-survived-16-years-cancer-free',
-  //   description: 'Research has made it clear that fever is not the enemy; it is the friend of healing..',
-  //   date: 'July 17, 2024',
-  //   time: '1:33 pm',
-  //   image: Podcast2, // Replace with actual image path
-  //   buttonText: 'Read More',
-  //   link: 'https://drive.google.com/file/d/1joF0kgXp7ODQIyhRuDPZ5seXC754---x/view?usp=drivesdk',
-  // },
+  {
+    title: 'Patient-with-endstage Glioblastoma-survived-16-years-cancer-free',
+    description: 'Research has made it clear that fever is not the enemy; it is the friend of healing..',
+    date: 'July 17, 2024',
+    time: '1:33 pm',
+    image: Podcast2, // Replace with actual image path
+    buttonText: 'Read More',
+    link: 'https://drive.google.com/file/d/1joF0kgXp7ODQIyhRuDPZ5seXC754---x/view?usp=drivesdk',
+  }
 ];
 
 function App() {

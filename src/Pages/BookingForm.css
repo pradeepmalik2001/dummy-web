@@ -3,46 +3,75 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120vh;
-  background-color: #f7f7f7;
-  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f7f7f7, #e8f5e8);
+  padding: 40px 20px;
 }
 
 /* Style the form */
 .formm {
   background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 40%; /* Adjust this value as needed for responsiveness */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
+  border: 1px solid #f0f0f0;
+}
+
+.formm::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #28a745, #34c759);
+  border-radius: 20px 20px 0 0;
 }
 
 /* Style each form group */
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 /* Style form labels */
 .form-group label {
-  margin-bottom: 5px;
-  font-weight: bold;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  font-size: clamp(0.9rem, 2vw, 1rem);
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 
 /* Style form inputs */
 .form-group input {
-  padding: 10px; /* Increased padding for a better appearance */
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%; /* Ensure inputs take the full width of their container */
-  box-sizing: border-box; /* Include padding and border in the width */
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  transition: all 0.3s ease;
+  background-color: #fafafa;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #28a745;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+}
+
+.form-group input::placeholder {
+  color: #999;
+  font-style: italic;
 }
 
 /* Specific styles for input types to ensure uniformity */
@@ -50,38 +79,128 @@ input[type="text"],
 input[type="email"],
 input[type="number"],
 input[type="date"] {
-  height: 90%; /* Set a specific height to ensure all input fields are the same size */
+  height: 50px;
 }
 
 /* Style the submit button */
-button {
-  padding: 10px;
-  background-color: #4CAF50;
+button[type="submit"] {
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #28a745, #34c759);
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 25px;
   cursor: pointer;
-  margin-top: 10px; /* Add a margin to separate the button from the last input */
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  font-weight: 600;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
 }
 
-button:hover {
-  background-color: #45a049;
+button[type="submit"]:hover {
+  background: linear-gradient(135deg, #218838, #28a745);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
 }
 
-  
-  @media (max-width: 768px) {
-    .formm {
-        width: 90%; /* Adjust form width on smaller screens */
-        padding: 15px;
-    }
-  
-    /* Smaller padding and font size for input fields */
-    .form-group input {
-        padding: 6px;
-    }
-  
-    /* Reduce button padding */
-    button {
-        padding: 8px;
-    }
+button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* Form title styling */
+.formm h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+}
+
+/* Required field indicator */
+.form-group label::after {
+  content: ' *';
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.form-group:last-of-type label::after {
+  content: '';
+}
+
+/* Tablet responsive */
+@media (max-width: 1024px) {
+  .form-container {
+    padding: 30px 15px;
   }
+
+  .formm {
+    padding: 35px;
+    max-width: 550px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 20px 10px;
+  }
+
+  .formm {
+    padding: 25px;
+    border-radius: 15px;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+  }
+
+  .form-group input {
+    padding: 12px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="date"] {
+    height: 45px;
+  }
+
+  button[type="submit"] {
+    padding: 12px 25px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 15px 5px;
+  }
+
+  .formm {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group input {
+    padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="date"] {
+    height: 40px;
+  }
+
+  button[type="submit"] {
+    padding: 10px 20px;
+  }
+}

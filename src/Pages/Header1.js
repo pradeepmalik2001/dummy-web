@@ -2,6 +2,7 @@
 import React from 'react';
 import logo from '../Images/logo.png';
 import { Link } from 'react-router-dom';
+import './Header1.css';
 
 const Header1 = () => {
 
@@ -33,10 +34,8 @@ const Header1 = () => {
             <li><Link to="/podcasts">Podcasts</Link></li>
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/signIn" className="signin-btn">Sign In</Link></li>
           </ul>
-          <Link to="/signIn" className="signin-btn">
-            Sign In
-          </Link>
         </div>
       </nav>
     </div>

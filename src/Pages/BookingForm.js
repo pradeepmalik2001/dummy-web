@@ -71,6 +71,7 @@ const BookingForm = () => {
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit} className="formm">
+        <h2>Schedule Your Free Consultation</h2>
         <div className="form-group">
           <label htmlFor="firstName">First Name * </label>
           <input

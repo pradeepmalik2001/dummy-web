@@ -1,7 +1,7 @@
 /* Container setup */
-.container {
+.containerr {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -9,13 +9,14 @@
   /* Empowering section styling */
   .empowering-section {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
   
   .empowering-section h1 {
     color: #2c8131;
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin-bottom: 30px;
+    font-weight: 700;
   }
   
   /* Flexbox layout for the text boxes */
@@ -23,91 +24,138 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
   }
   
   .text-box {
     background-color: #f9f9f9;
-    padding: 20px;
-    margin: 10px;
-    flex: 1 1 45%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1 1 calc(50% - 10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .text-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   }
   
   .text-box h2 {
     color: #2c8131;
-    border-bottom: 2px solid #2c8131;
-    margin-bottom: 15px;
+    border-bottom: 3px solid #2c8131;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
   }
   
   .text-box p {
-    line-height: 1.6;
+    line-height: 1.7;
     color: #555;
+    font-size: clamp(0.9rem, 2vw, 1rem);
   }
   
   .journey-div{
-    justify-content: space-around;
-    align-items: left;
-    background-color: aqua;
+    width: 100%;
+    margin-top: 40px;
   }
 
   /* Journey section styling */
   .journey-section {
     text-align: center;
-    background: #2c8131;
+    background: linear-gradient(135deg, #2c8131, #34a853);
     color: white;
-    padding: 40px 20px;
-    justify-content: space-around;
-    align-items: left;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(44, 129, 49, 0.3);
   }
   
   .journey-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 25px;
+    font-weight: 600;
   }
   
   .cta-button {
-    padding: 15px 30px;
-    font-size: 1.2em;
+    padding: 15px 35px;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
     color: #2c8131;
     background-color: white;
     border: none;
     cursor: pointer;
-    border-radius: 25px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
   }
   
   .cta-button:hover {
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
   }
   
-  /* Responsive Design */
+  /* Tablet responsive */
+  @media (max-width: 1024px) {
+    .containerr {
+      padding: 30px 15px;
+    }
+
+    .text-box {
+      padding: 25px;
+    }
+
+    .journey-section {
+      padding: 40px 15px;
+    }
+  }
+
+  /* Mobile responsive */
   @media (max-width: 768px) {
-    .content {
+    .containerr {
+      padding: 20px 10px;
+    }
+
+    .contentt {
       flex-direction: column;
+      gap: 15px;
     }
   
     .text-box {
       flex: 1 1 100%;
+      padding: 20px;
     }
-  
-    .empowering-section h1 {
-      font-size: 2em;
+
+    .journey-section {
+      padding: 30px 15px;
+      margin: 20px 0;
+    }
+
+    .cta-button {
+      padding: 12px 25px;
     }
   }
   
   @media (max-width: 480px) {
-    .empowering-section h1 {
-      font-size: 1.6em;
+    .containerr {
+      padding: 15px 5px;
     }
-  
-    .journey-section h2 {
-      font-size: 1.6em;
+
+    .text-box {
+      padding: 15px;
+    }
+
+    .journey-section {
+      padding: 25px 10px;
+      border-radius: 10px;
     }
   
     .cta-button {
-      font-size: 1em;
       padding: 10px 20px;
+      width: auto;
+      min-width: 200px;
     }
   }
   

@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -33,15 +35,30 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Additional responsive behavior */
-@media (max-width: 768px) {
+/* Responsive behavior for different screen sizes */
+@media (max-width: 1024px) {
   .card-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 15px;
   }
 }
 
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    padding: 10px 5px;
+  }
+}
 
 @keyframes App-logo-spin {
   from {

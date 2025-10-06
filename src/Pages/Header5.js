@@ -38,7 +38,7 @@ function Header5() {
         <div className="team-member">
           <img src={GorterLecture} alt="Top Cancer Doctor" />
           <p>Gorter Lecture Explanation</p>
-          {/* <span>Lead Naturopath</span> */}
+          <span>Explanation</span>
         </div>
         <div className="team-member">
           <img src={GorterTherapy} alt="Shane LaRoche" />

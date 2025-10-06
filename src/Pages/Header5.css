@@ -1,108 +1,235 @@
 .team-section {
     text-align: center;
-    padding: 2rem;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
   .title {
-    font-size: 2rem;
-    color: #6fbf3a; /* Green color */
-    margin-bottom: 2rem;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: #6fbf3a;
+    margin-bottom: 50px;
+    font-weight: 700;
   }
   
   .family-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 60px;
+    gap: 30px;
+    flex-wrap: wrap;
   }
   
   .family-image {
-    width: 40%; /* Adjust this as needed */
-    margin-right: 2rem;
-    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .family-image:hover {
+    transform: scale(1.02);
   }
   
   .family-description {
-    width: 50%; /* Adjust width as needed */
+    flex: 1;
+    min-width: 300px;
     text-align: left;
+    padding: 0 20px;
   }
   
   .family-description h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    margin-bottom: 20px;
+    color: #2c8131;
+    font-weight: 600;
   }
   
   .family-description p {
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
     color: #555;
+    line-height: 1.7;
   }
   
   .team-members {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 50px;
     flex-wrap: wrap;
-    margin-top: 2rem;
   }
   
   .team-member {
     text-align: center;
-    margin: 1rem;
-    width: 150px;
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+  }
+
+  .team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   }
   
   .team-member img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
+    border: 4px solid #6fbf3a;
+    margin-bottom: 15px;
   }
   
   .team-member p {
-    margin: 0.5rem 0;
-    font-weight: bold;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: #333;
   }
   
   .team-member span {
-    font-size: 0.9rem;
+    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
     color: #777;
+    font-style: italic;
   }
   
   .journey-div{
-    justify-content: space-around;
-    align-items: left;
-    background-color: aqua;
     width: 100%;
+    margin-top: 60px;
   }
 
   /* Journey section styling */
   .journey-section {
     text-align: center;
-    background: #2c8131;
+    background: linear-gradient(135deg, #2c8131, #34a853);
     color: white;
-    padding: 40px 20px;
-    justify-content: space-around;
-    align-items: left;
-    width: 100%;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(44, 129, 49, 0.3);
   }
   
   .journey-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 25px;
+    font-weight: 600;
   }
   
   .cta-button {
-    padding: 15px 30px;
-    font-size: 1.2em;
+    padding: 15px 35px;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
     color: #2c8131;
     background-color: white;
     border: none;
     cursor: pointer;
-    border-radius: 25px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
   }
   
   .cta-button:hover {
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Tablet responsive */
+  @media (max-width: 1024px) {
+    .team-section {
+      padding: 50px 15px;
+    }
+
+    .family-section {
+      gap: 25px;
+    }
+
+    .family-description {
+      padding: 0 15px;
+    }
+
+    .team-members {
+      gap: 25px;
+    }
+  }
+
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .team-section {
+      padding: 40px 10px;
+    }
+
+    .family-section {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+
+    .family-description {
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    .team-members {
+      gap: 20px;
+    }
+
+    .team-member {
+      width: 200px;
+    }
+
+    .team-member {
+      padding: 15px;
+    }
+
+    .team-member img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .journey-section {
+      padding: 40px 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .team-section {
+      padding: 30px 5px;
+    }
+
+    .family-section {
+      margin-bottom: 40px;
+    }
+
+    .team-members {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .team-member {
+      width: 250px;
+    }
+
+    .team-member {
+      padding: 10px;
+    }
+
+    .journey-section {
+      padding: 30px 10px;
+      border-radius: 10px;
+    }
+
+    .cta-button {
+      padding: 12px 25px;
+      min-width: 200px;
+    }
   }
   
