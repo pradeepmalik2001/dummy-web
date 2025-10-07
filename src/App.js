@@ -21,6 +21,7 @@ import Podcast1 from './Images/Podcast1.png';
 import Podcast2 from './Images/Podcast2.png';
 import Podcast3 from './Images/Podcast3.png';
 import Blog1 from './Images/Blog1.png';
+import { LanguageProvider } from './context/LanguageContext';
 
 const cardData = [
   {
@@ -75,66 +76,68 @@ const podcastData = [
 
 function App() {
   return (
-    <Router>
-    <div className="App">
-        <Header1/>
-        <Routes>
-          <Route path='/' element={<>
-            <Header/>
-            <Header2/>
-            <Header3/>
-            <Header4/>
-            <Header5/>
-            <Header6/>
-          </>}/>
-          <Route path="/signIn" element={<SignIn/>}></Route>
-          <Route path="/contact" element={<Footer1/>}></Route>
-          <Route path='/form' element={<BookingForm />}/>
-          {/* <Route path='/bookingData' element={<BookingData />}/> */}
-          <Route
-            path="/blog"
-            element={
-              <div className="card-container">
-                {cardData.map((item, index) => (
-                  <BlogCard
-                    key={index}
-                    title={item.title}
-                    description={item.description}
-                    date={item.date}
-                    time={item.time}
-                    image={item.image}
-                    buttonText={item.buttonText}
-                    link={item.link} 
-                  />
-                ))}
-              </div>
-            }
-          />
-          <Route
-            path="/podcasts"
-            element={
-              <div className="card-container">
-                {podcastData.map((item, index) => (
-                  <BlogCard
-                    key={index}
-                    title={item.title}
-                    description={item.description}
-                    date={item.date}
-                    time={item.time}
-                    image={item.image}
-                    buttonText={item.buttonText}
-                    link={item.link} 
-                  />
-                ))}
-              </div>
-            }
-          />
-          {/* <Route path="/form" element={<BookingForm/>} /> */}
-          <Route path="/booking" element={<DataTable/>}></Route>
-        </Routes>
-        <Footer/>
-        </div>
-      </Router>
+    <LanguageProvider>
+      <Router>
+      <div className="App">
+          <Header1/>
+          <Routes>
+            <Route path='/' element={<>
+              <Header/>
+              <Header2/>
+              <Header3/>
+              <Header4/>
+              <Header5/>
+              <Header6/>
+            </>}/>
+            <Route path="/signIn" element={<SignIn/>}></Route>
+            <Route path="/contact" element={<Footer1/>}></Route>
+            <Route path='/form' element={<BookingForm />}/>
+            {/* <Route path='/bookingData' element={<BookingData />}/> */}
+            <Route
+              path="/blog"
+              element={
+                <div className="card-container">
+                  {cardData.map((item, index) => (
+                    <BlogCard
+                      key={index}
+                      title={item.title}
+                      description={item.description}
+                      date={item.date}
+                      time={item.time}
+                      image={item.image}
+                      buttonText={item.buttonText}
+                      link={item.link} 
+                    />
+                  ))}
+                </div>
+              }
+            />
+            <Route
+              path="/podcasts"
+              element={
+                <div className="card-container">
+                  {podcastData.map((item, index) => (
+                    <BlogCard
+                      key={index}
+                      title={item.title}
+                      description={item.description}
+                      date={item.date}
+                      time={item.time}
+                      image={item.image}
+                      buttonText={item.buttonText}
+                      link={item.link} 
+                    />
+                  ))}
+                </div>
+              }
+            />
+            {/* <Route path="/form" element={<BookingForm/>} /> */}
+            <Route path="/booking" element={<DataTable/>}></Route>
+          </Routes>
+          <Footer/>
+          </div>
+        </Router>
+    </LanguageProvider>
   );
 }
 

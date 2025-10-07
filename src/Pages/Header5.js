@@ -6,12 +6,15 @@ import GorterTherapy from '../Images/gorter therapy.jpeg';
 import Gorterfamily from '../Images/Gorter Fam.png';
 import GorterAutograph from '../Images/china autpgraph.jpeg';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 
 function Header5() {
+  const { t } = useLanguage();
+  
   return (
     <div className="team-section">
       {/* Title */}
-      <h2 className="title">The team dedicated to your healing</h2>
+      <h2 className="title">{t('teamTitle')}</h2>
 
       {/* Family Section */}
       <div className="family-section">
@@ -21,10 +24,8 @@ function Header5() {
           className="family-image"
         />
         <div className="family-description">
-          <h3>The Robert Gorter Family</h3>
-          <p>
-          On average, an adult human being produces approximately 10 million cancer cells per day. A major part of the immune system is to recognize and kill these cells immediately….  Thus: only one’s immune system can have you turn 88 years of age. The Gorter Model focuses on immune restoration to assist the immune system to kill all these approximately 10 million cancer cells and live without clinical cancer or, destroy cancer cells rapidly.
-          </p>
+          <h3>{t('gorterFamily')}</h3>
+          <p>{t('familyDescription')}</p>
         </div>
       </div>
 
@@ -45,23 +46,13 @@ function Header5() {
           <p>Gorter Therapy</p>
           <span>Head Doctor</span>
         </div>
-        {/* <div className="team-member">
-          <img src="https://via.placeholder.com/100" alt="Christine Muir" />
-          <p>Christine Muir</p>
-          <span>Cancer Concierge</span>
-        </div>
-        <div className="team-member">
-          <img src="https://via.placeholder.com/100" alt="Bob Levy" />
-          <p>Bob Levy</p>
-          <span>Director of Operations</span>
-        </div> */}
       </div>
 
       {/* CTA Button */}
       <div className='journey-div'>
       <section className="journey-section">
-        <h2>Begin your healing journey!</h2>
-        <Link to="/form" className="cta-button">Schedule a free call now!</Link>
+        <h2>{t('beginJourney')}</h2>
+        <Link to="/form" className="cta-button">{t('scheduleCall')}</Link>
       </section>
       </div>
     </div>

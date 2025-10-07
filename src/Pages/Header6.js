@@ -8,8 +8,10 @@ import GorterTherapy from '../Images/Image2.jpeg';
 import GorterAutograph from '../Images/china autpgraph.jpeg';
 import GorterOpinion from '../Images/Gorter Opinion.jpeg';
 import Book7 from '../Images/Book7.jpeg';
+import { useLanguage } from '../context/LanguageContext';
 
 const Header6 = () => {
+  const { t } = useLanguage();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   
@@ -48,7 +50,7 @@ const Header6 = () => {
 
   return (
     <div className="gallery-section">
-      <h2 className="gallery-title">Heaven gallery</h2>
+      <h2 className="gallery-title">{t('galleryTitle')}</h2>
       
       <div className="carousel-container">
         <button className="carousel-btn prev" onClick={prevSlide}>‹</button>

@@ -3,17 +3,20 @@ import '../Pages/Header.css';
 import logo from '../Images/logo.png';
 import midlogo from '../Images/Webimage.jpg';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 
 function Header() {
+  const { t } = useLanguage();
+  
   return (
     <div>
       <header>
         <div className="header-banner">
           <p className="banner-text">
-            Speak To A Team Member To Answer Your Questions Now!
+            {t('speakToTeam')}
           </p>
           <Link to="/form" className="schedule-button">
-            Schedule a free call now!
+            {t('scheduleCall')}
           </Link>
         </div>
       </header>

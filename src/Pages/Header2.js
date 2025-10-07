@@ -1,12 +1,15 @@
 import React from 'react';
 import "../Pages/Header2.css";
+import { useLanguage } from '../context/LanguageContext';
 
 function Header2() {
+  const { t } = useLanguage();
+  
   return (
     <div className="container">
       <section className="mission">
-        <h1>Our Mission</h1>
-        <p>All therapies as part of the Gorter Model are therefore nontoxic.</p>
+        <h1>{t('ourMission')}</h1>
+        <p>{t('missionText')}</p>
       </section>
 
       <div className="content">
@@ -21,15 +24,13 @@ function Header2() {
             allowFullScreen
           />
           <div className="video-caption">
-            Cozy Cabins is now The Healing Oasis
+            {t('cozyCaption')}
           </div>
         </div>
 
         <div className="text-container">
-          <h2>Welcome to the Gorter Model</h2>
-          <p>         
-          The Gorter Model is dedicated to the treatment of cancer using immune-supportive, nontoxic therapies and also treat patients living with other chronic diseases, such as infections with hepatitis B and C and HIV. This program was developed by Robert Gorter, MD, PhD, over more than four decades of research, clinical experience and after surviving cancer himself.
-          </p>
+          <h2>{t('welcomeGorter')}</h2>
+          <p>{t('gorterDescription')}</p>
         </div>
       </div>
     </div>
