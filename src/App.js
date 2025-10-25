@@ -29,19 +29,28 @@ const cardData = [
     description: 'Most people who are looking for alternative places to heal...',
     date: 'October 15, 2024',
     time: '7:30 pm',
-    image: Blog1, // Replace with actual image path
+    image: Blog1,
     buttonText: 'Read More',
     link: 'https://robert-gorter.info/prof-dr-med-robert-gorter-md-phd-on-his-first-official-tour-to-china-as-an-invited-scientist/',
   },
-  // {
-  //   title: 'Healing Oasis Guest Stories – A Journey of Hope and Healing',
-  //   description: 'Message from our Founder, Dave Vass...',
-  //   date: 'July 17, 2024',
-  //   time: '1:33 pm',
-  //   image: Podcast2, // Replace with actual image path
-  //   buttonText: 'Read More',
-  //   link: 'https://www.google.com',
-  // },
+  {
+    title: 'Crop Circles 2024 - Mysterious Phenomena and Scientific Analysis',
+    description: 'Explore the fascinating world of crop circles and their potential connections to healing energies and consciousness...',
+    date: 'November 20, 2024',
+    time: '2:15 pm',
+    image: Podcast2,
+    buttonText: 'Read More',
+    link: '/Crop Circles 2024.pdf',
+  },
+  {
+    title: 'Dr. Robert Gorter - Cannabis Research and Medical Applications',
+    description: 'Comprehensive overview of Dr. Gorter\'s research and expertise in cannabis-based medical treatments...',
+    date: 'November 25, 2024',
+    time: '4:45 pm',
+    image: Podcast3,
+    buttonText: 'Read More',
+    link: '/Robert CV short in regards to Cannabis November 2024 (1).pdf',
+  },
 ];
 
 const podcastData = [
