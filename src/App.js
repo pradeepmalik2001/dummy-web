@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Header from './Pages/Header';
@@ -50,6 +49,24 @@ const cardData = [
     image: Podcast3,
     buttonText: 'Read More',
     link: '/Robert CV short in regards to Cannabis November 2024 (1).pdf',
+  },
+  {
+    title: 'Cannabis and Mistletoe - Immunoprotection and DNA Research',
+    description: 'Advanced research on cannabis and mistletoe therapy for immunoprotection and DNA repair mechanisms...',
+    date: 'December 1, 2024',
+    time: '3:20 pm',
+    image: Podcast1,
+    buttonText: 'Read More',
+    link: '/Cannabis and Mistletoe immunoprotection and DNA re_251028_082115.pdf',
+  },
+  {
+    title: 'Orientech Laizhou Medical Presentation - Innovative Treatment Approaches',
+    description: 'Comprehensive presentation on innovative medical treatment approaches and methodologies...',
+    date: 'December 5, 2024',
+    time: '5:10 pm',
+    image: Blog1,
+    buttonText: 'Read More',
+    link: '/Orientech Laizhou Presentation(20201121)_251028_082143.pdf',
   },
 ];
 
